@@ -6,21 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeros pasos con GIT</title>
     <link rel="stylesheet" href="estilos.css">
+    <script  type="text/javascript"> 
+    function validar(){
+        var usuario = document.getElementById("usuario").value;
+        var password= document.getElementById("password").value;
+        if(usuario=="darkar" && password=="12345")
+        {
+            window.location.href="principal.html"
+        }else{
+            alert("POR FAVOR VERIFIQUE LOS DATOS")
+        }
+    }
+    </script>
+    
 </head>
 <body>
-    
+    <form>
     <section class="form-login">
         <h1>
             <center>
             ESTOY APRENDIENDO A USAR GIT</center>
         </h1>
-        <h5>Formulario Login</h5>
-        <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
-        <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
-        <input class="buttons" type="submit" name="" value="Ingresar">
-        <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
-  
+        <h5>LOGIN</h5>
+        <input id="usuario" class="controls" type="text" name="usuario" value="" placeholder="Usuario">
+        <input id="password"class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
+        <center><input type="button" class="button"name="button" id="button" value="INICIAR SESION" onclick="validar()" ></center>
+        <p><a href="https://www.youtube.com/watch?v=mCdA4bJAGGk">¿Olvidastes tu Contraseña?</a></p>
       </section>
+    </form>
     
 </body>
 </html>

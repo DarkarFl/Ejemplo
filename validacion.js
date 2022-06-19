@@ -3,7 +3,7 @@ const pass = document.getElementById("password")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 
-form.addEventListener("submit", e=>{
+form.addEventListener("button", e=>{
     e.preventDefault()
     let warnings = ""
     let entrar = false
