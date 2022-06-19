@@ -1,0 +1,45 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url('imagenes/fondo1.jpg');
+    font-family: arial;
+}
+.container{
+    width: 70vw;
+    height: 100vh;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.salir{
+    display: block;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    background: #023b97;
+    border: none;
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#h1{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+#btn{
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    background: #023b97;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#parrafo{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
