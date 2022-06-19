@@ -4,12 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Document</title>
+    <title>CANCIONES</title>
 </head>
 <body>
-
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand">FREE-FUN</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="principal.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="canciones.html">CANCIONES</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">VIDEOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container-fluid">
+        <div class="listado-canciones">
+            <div class="cancion">
+                <div class="titulo">GET LUCKY</div>
+                <audio controls src="./canciones/GETLUCKY.mp3"></audio>
+                <div class="play" id="GETLUCKY">
+                    <span class="material-icons">play_circle</span>
+                </div>
+                <div class="stop">
+                    <span class="material-icons">
+                        cancel
+                    </span>
+                </div>
+                <div class="descargar">
+                    <a href="./canciones/GETLUCKY.mp3" download>
+                        <span class="material-icons">
+                            file_download
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="cancion">
+                <div class="titulo">
+                    GUNS AND ROSES SWEET CHILD OF MINE
+                </div>
+                <audio controls src="./canciones/SweetChild.mp3"></audio>
+                <div class="play" id="SweetChild">
+                    <span class="material-icons">
+                        play_circle
+                    </span>
+                </div>
+                <div class="stop">
+                    <span class="material-icons">
+                        cancel
+                    </span>
+                </div>
+                <div class="descargar">
+                    <a href="./canciones/SweetChild.mp3" download>
+                        <span class="material-icons">
+                            file_download
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="cancion">
+                <div class="titulo">
+                    SWEET VICTORY
+                </div>
+                <audio controls src="./canciones/SweetVictory.mp3"></audio>
+                <div class="play" id="SweetVictory">
+                    <span class="material-icons">
+                        play_circle
+                    </span>
+                </div>
+                <div class="stop">
+                    <span class="material-icons">
+                        cancel
+                    </span>
+                </div>
+                <div class="descargar">
+                    <a href="./canciones/SweetVictory.mp3" download>
+                    <span class="material-icons">
+                        file_download
+                    </span>
+                </a>
+                </div>
+            </div>
+        </div>
+        <input type="range" max="1" min="0" step="0.1" class="volumen">
+    </div>
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
